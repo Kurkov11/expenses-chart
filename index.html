@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Expenses chart component</title>
@@ -16,30 +18,67 @@
   </style>
 </head>
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
+  <div id="wrapper">
+    <section id="balance-logo-section">
+      <div id="balance-value">
+        <p id="title">My balance</p>
+        <h2 id="value">$921.48</h2> <!--JS-->
+      </div>
+      <img src="images/logo.svg" alt="fake-logo" id="logo">
+    </section>
+    <section id="spending">
+      <h2 id="spending-heading">Spending - Last 7 days</h2>
+      <div id="columns">
+        <section class="column">
+          <div class="hover-details"></div>
+          <div class="graph"></div><!--JS-->
+          <p class="day">mon</p>
+        </section>
+        <section class="column">
+          <div class="hover-details"></div>
+          <div class="graph"></div><!--JS-->
+          <p class="day">tue</p>
+        </section>
+        <section class="column">
+          <div class="hover-details"></div>
+          <div class="graph"></div><!--JS-->
+          <p class="day">wed</p>
+        </section>
+        <section class="column">
+          <div class="hover-details"></div>
+          <div class="graph"></div><!--JS-->
+          <p class="day">thu</p>
+        </section>
+        <section class="column">
+          <div class="hover-details"></div>
+          <div class="graph"></div><!--JS-->
+          <p class="day">fri</p>
+        </section>
+        <section class="column">
+          <div class="hover-details"></div>
+          <div class="graph"></div><!--JS-->
+          <p class="day">sat</p>
+        </section>
+        <section class="column">
+          <div class="hover-details"></div>
+          <div class="graph"></div><!--JS-->
+          <p class="day">sun</p>
+        </section>
+      </div>
+      <p id="total-text">Total this month</p>
+      <div id="cost-and-increase">
+        <h1 id="total-value">$478.33</h1><!--JS-->
+        <div id="increase">
+          <p id="percent">+2.4%</p> <!--JS-->
+          <p id="from-when">from last month</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="index.js"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-  <script src="index.js"></script>
 </body>
 </html>

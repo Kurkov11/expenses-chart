@@ -1,0 +1,141 @@
+html{
+    font-size: 16px;
+    font-family: 'dm sans';
+}
+body{
+    background-color: hsl(27, 66%, 92%);
+}
+#wrapper{
+    padding: 0 17px;
+    height: 100vh;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: hsl(25, 47%, 15%);
+}
+h2{
+    font-size: 26px;
+    font-weight: 600;
+}
+section{
+    border-radius: 10px;
+}
+#balance-logo-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(10, 79%, 65%);
+    color: hsl(33, 100%, 98%);
+    padding: 20px;
+    min-width: 310px;
+}
+#balance-value{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#balance #title{
+
+}
+#balance #value{
+    
+}
+#logo{
+    max-height: 40px;
+}
+#spending{
+    background-color: hsl(33, 100%, 98%);
+    padding: 25px 20px;
+    min-width: 310px;
+}
+#spending-heading{
+    color: hsl(25, 47%, 15%);
+}
+#columns{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid hsl(27, 66%, 92%);
+    display: flex;
+    justify-content: space-between;
+}
+.column{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    color: hsl(28, 10%, 53%);
+}
+.graph{
+    height: 100px;
+    width: 35px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 3px;
+    margin-top: 38.5px; /* Make space for hover-details */
+}
+#total-text{
+    color: hsl(28, 10%, 53%);
+    margin-bottom: 5px;
+}
+#cost-and-increase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#increase{
+    text-align: right;
+}
+#percent{
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+#from-when{
+    color: hsl(28, 10%, 53%);
+}
+
+.hover-details{
+    bottom: 0;
+    position: absolute;
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(33, 100%, 98%);
+    font-size: 13px;
+    padding: 4px;
+    border-radius: 3px;
+    display: none;
+}
+@media only screen and (width >= 430px){
+    .graph{
+        width: 40px;
+    }
+}
+
+@media only screen and (width >= 500px){
+    #balance-logo-section, #spending{
+        width: 466px;
+        border-radius: 15px;
+    }
+    #spending{
+        padding: 30px 35px;
+    }
+    #balance-logo-section{
+        padding: 30px;
+    }
+    #wrapper{
+        align-items: center;
+    }
+    .graph{
+        width: 45px;
+    }
+    #total-value{
+        font-size: 40px;
+    }
+    .hover-details{
+        padding: 6px;
+    }
+}
